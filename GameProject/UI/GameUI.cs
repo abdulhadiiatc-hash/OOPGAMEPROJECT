@@ -119,7 +119,13 @@ namespace GameProject.UI
         {
             // STUDENT TODO (UI task): explain attack, healing, winning, losing,
             // and scoring here. Clear the screen first and call Pause() last.
-            Console.WriteLine("\nInstructions have not been completed yet.");
+            Console.Clear();
+            Console.WriteLine("\n 1. The player atacks in a random amount of value ranging form 17-24.");
+            Console.WriteLine("\n 2. The players uses healing potions to increase health by 25 points.");
+            Console.WriteLine("\n 3. The player wins if all monsters are defeated.");
+            Console.WriteLine("\n 4. The player loses if he is killed by monsters.");
+            Console.WriteLine("\n 5. When a monster is defeated, it's reward points are given to the player.");
+            Console.WriteLine("\n 6. Winning the game adds an extra bonus in the accumulated score.");
             Pause();
         }
 

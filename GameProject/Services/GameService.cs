@@ -2,6 +2,7 @@ using GameProject.Models;
 using GameProject.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Xml.XPath;
 
 namespace GameProject.Services
 {
@@ -49,8 +50,9 @@ namespace GameProject.Services
 
         public int CalculateVictoryBonus(Player player)
         {
-
-            return 0;
+            int bonus;
+            bonus = player.Health + (player.HealingPotions * 10);
+            return bonus;
         }
 
         public void SaveResult(Player player, bool won)
@@ -63,6 +65,7 @@ namespace GameProject.Services
 
         public List<GameResult> GetTopScores(int numberOfScores)
         {
+            
             // DIFFICULT STUDENT TODO (service task): build a leaderboard.
             // Requirements:
             // 1. Read all results 
@@ -71,9 +74,47 @@ namespace GameProject.Services
             // 4. Return only the requested number of results.
             // 5. Do not fail when the file contains fewer results than requested.
             // 6. Use nested loops to compare items, and use a temporary variable when swapping two items.
-
+            _repository.GetAll();
+            List<GameResult> sortedResult = _repository.GetAll();
+            foreach (GameResult result in sortedResult)
+            {
+                foreach (GameResult result2 in sortedResult)
+                if(result.Score > result2.Score)
+                {
+                    string temp;
+                    temp = result2.Result;
+                    result2.Result = result.Result;
+                    result.Result= temp;
+                }
+            }
+            foreach (GameResult score in sortedResult)
+            {
+                foreach (GameResult score2 in sortedResult)
+                {
+                    if (score.Score > score2.Score)
+                    {
+                        int temp;
+                        temp = score2.Score;
+                        score2.Score = score.Score;
+                        score.Score = temp;
+                    }
+                }
+            }
+            foreach(GameResult name in sortedResult)
+            {
+                foreach(GameResult name2 in sortedResult)
+                {
+                    if(name.Score > name2.Score)
+                    {
+                        string temp;
+                        temp = name2.PlayerName;
+                        name2.PlayerName = name.PlayerName;
+                        name.PlayerName = temp;
+                    }
+                }
+            }
             // Fallback: the project stays runnable until students implement sorting.
-            return _repository.GetAll();
+            return sortedResult;
         }
     }
 }
