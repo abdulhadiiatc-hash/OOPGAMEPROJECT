@@ -46,8 +46,7 @@
               "RelativeToolTip": "GameProject\\Models\\Player.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T08:13:34.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-04T08:13:34.765Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "GameProject\\Models\\Monster.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T08:13:32.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-04T08:13:32.121Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "GameProject\\Repositories\\ScoreRepository.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T08:13:02.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-04T08:13:02.745Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "GameProject\\UI\\GameUI.cs",
               "ViewState": "AgIAAF8AAAAAAAAAAAAAAGMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T08:11:38.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-04T08:11:38.015Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "GameProject\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T08:04:17.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-04T08:04:17.174Z"
             }
           ]
         }
